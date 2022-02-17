@@ -26,14 +26,13 @@
 <div id="dplayer"></div>
 <script>
     window.onload = function () {
-        var url = queryString("url");
-        console.log(url)
+        var url = queryString("url");       
         window.dp1 = new DPlayer({
             container: document.getElementById('dplayer'),
             preload: 'auto',
             autoplay: true,
             video: {
-                url: 'https://c2.monidai.com/20220204/m61yBVIe/index.m3u8',
+                url: url,
                 pic: 'https://i.loli.net/2019/06/06/5cf8c5d9c57b510947.png'
             }
         });
